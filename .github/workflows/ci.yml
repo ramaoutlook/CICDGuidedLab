@@ -22,7 +22,7 @@ jobs:
         run: dotnet restore
 
       - name: Build the application
-        run: dotnet build --configuration Release --on-restore
+        run: dotnet build --configuration Release --no-restore
 
       - name: Run tests
         run: dotnet test --no-restore --verbosity normal
